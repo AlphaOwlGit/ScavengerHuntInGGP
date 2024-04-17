@@ -97,6 +97,7 @@ class Windmill extends Location {
             this.engine.addChoice(choice.Text, choice);
         }
         if (VisitCount == 12) {
+            this.engine.show(locationData.PicCollect);
             this.engine.addChoice("Join Cookout");
         }
         else {
@@ -107,7 +108,11 @@ class Windmill extends Location {
     }
 
     handleChoice(choice) {
-        if(choice) {
+        if(choice.Text == "Smell the flowers"){
+            this.engine.show(choice.Prompt);
+            this.engine.gotoScene(Windmill, choice.Target);
+        }
+        else if(choice) {
             this.engine.show("&gt; "+choice.Text);
             this.engine.gotoScene(Location, choice.Target);
         }
