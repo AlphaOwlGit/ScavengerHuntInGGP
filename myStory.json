@@ -1,0 +1,337 @@
+{
+    "Title": "Scavenger Hunt in Golden Gate Park",
+    "Credits": "Created by Garrett Yu (gtyu@ucsc.edu).",
+    "InitialLocation": "Gate",
+    "Locations": {
+        "Gate": {
+            "Body": "You are at the gate of Golden Gate Park in San Francisco, CA, located on 19th and Lincoln. This is where you start your scavenger hunt at.",
+            "PicCollect": "You are tasked to complete a scavenger hunt throughout Golden Gate Park, taking photos at specific locations in order to attend a cookout at the Dutch Windmill. Here's the list:",
+            "Checklist": [
+                {
+                    "Name": "Mothers Meadow"
+                },
+                {
+                    "Name": "Stow Lake"
+                },
+                {
+                    "Name": "Turtle Pond"
+                },
+                {
+                    "Name": "Prayerbook Cross"
+                },
+                {
+                    "Name": "Rose Garden"
+                },
+                {
+                    "Name": "Rideout Fountain"
+                },
+                {
+                    "Name": "Koret Children's Playground"
+                },
+                {
+                    "Name": "Conservatory of Flowers"
+                },
+                {
+                    "Name": "Botanical Garden"
+                },
+                {
+                    "Name": "Polo Field"
+                },
+                {
+                    "Name": "Bison Paddock"
+                },
+                {
+                    "Name": "Dutch Windmill"
+                }
+            ],
+            "VisitCheck": 0,
+            "Choices": [
+                {
+                    "Text": "North",
+                    "Target": "Stow Lake"
+                },
+                {
+                    "Text": "East",
+                    "Target": "Mothers Meadow"
+                },
+                {
+                    "Text": "West",
+                    "Target": "Turtle Pond"
+                }
+            ]
+        },
+        "Stow Lake": {
+            "Body": "You are at Stow Lake, the largest lake in the park. You can spot pedal boats in the water and people going for jogs.",
+            "PicCollect": "You know a real pretty spot to snap your picture, so you hastily make your way over to Strawberry Hill, the island in the middle of the lake. There, you position yourself in front of Huntington Falls, and you're able to save the moment in your phone.",
+            "VisitCheck": 2,
+            "Choices": [
+                {
+                    "Text": "North",
+                    "Target": "Prayerbook Cross"
+                },
+                {
+                    "Text": "East",
+                    "Target": "Botanical Garden"
+                },
+                {
+                    "Text": "South",
+                    "Target": "Gate"
+                },
+                {
+                    "Text": "West",
+                    "Target": "Hellman Hollow"
+                }
+            ]
+        },
+        "Mothers Meadow": {
+            "Body": "Mothers Meadow, a nice open lawn for families to sit at.",
+            "PicCollect": "Wanting to start your scavenger hunt off with a bang, you take a selfie of yourself with the the near-empty patch of grass.",
+            "VisitCheck": 1,
+            "Choices": [
+                {
+                    "Text": "North",
+                    "Target": "Stow Lake"
+                },
+                {
+                    "Text": "West",
+                    "Target": "Gate"
+                }
+            ]
+        },
+        "Turtle Pond": {
+            "Body": "Turtle Pond is a nice and serene spot, though you are unable to see any turtles.",
+            "PicCollect": "You catch a glimpse of a turtle and try to wait for it to walk in frame. It takes its time, but makes it. You take a picture of yourself with your turtle friend on the floor.",
+            "VisitCheck": 3,
+            "Choices": [
+                {
+                    "Text": "North",
+                    "Target": "Hellman Hollow"
+                },
+                {
+                    "Text": "East",
+                    "Target": "Gate"
+                }
+            ]
+        },
+        "Prayerbook Cross": {
+            "Body": "Prayerbook Cross is a nice peaceful sight, with the imposing cross nearby.",
+            "PicCollect": "You snap a selfie infront of the cross, though the lighting isn't the best.",
+            "VisitCheck": 4,
+            "Choices": [
+                {
+                    "Text": "East",
+                    "Target": "Rose Garden"
+                },
+                {
+                    "Text": "South",
+                    "Target": "Stow Lake"
+                },
+                {
+                    "Text": "West",
+                    "Target": "Lindley Meadow"
+                }
+                
+            ]
+        },
+        "Botanical Garden": {
+            "Body": "The Botanical Garden is a popular spot in the park, getting to see flowers from different countries.",
+            "PicCollect": "You spot the nearby metal arch, intertwined with roses, and snap a picture of yourself inbetween it.",
+            "VisitCheck": 9,
+            "Choices": [
+                {
+                    "Text": "Smell the flowers",
+                    "Prompt": "You smell the flowers, a nice little break away from scavenger hunt.",
+                    "Target": "Botanical Garden"
+                },
+                {
+                    "Text": "North",
+                    "Target": "RideoutFountain"
+                },
+                {
+                    "Text": "East",
+                    "Target": "Koret Children's Playground"
+                },
+                {
+                    "Text": "West",
+                    "Target": "Stow Lake"
+                }
+            ]
+        },
+        
+        "Hellman Hollow": {
+            "Body": "Hellman Hollow is open and spacious, a nice spot for a picnic.",
+            "Choices": [
+                {
+                    "Text": "North",
+                    "Target": "Lindley Meadow"
+                },
+                {
+                    "Text": "East",
+                    "Target": "Stow Lake"
+                },
+                {
+                    "Text": "South",
+                    "Target": "Turtle Pond"
+                },
+                {
+                    "Text": "West",
+                    "Target": "Polo Field"
+                }
+            ]
+        },
+        "Polo Field": {
+            "Body": "Though it is rare to see a game occur at the Polo Field, it's a nice roundabout to go for a bike ride.",
+            "PicCollect": "The polo field is pretty large to really find a good picture to take at. You settle for a tunnel picture taken from a nearby bystander.",
+            "VisitCheck": 10,
+            "Choices": [
+                {
+                    "Text": "North",
+                    "Target": "Lindley Meadow"
+                },
+                {
+                    "Text": "East",
+                    "Target": "Hellman Hollow"
+                }
+            ]
+        },
+        "Rose Garden": {
+            "Body": "Rose Garden is a small nook of the park that shows its true colors.",
+            "PicCollect": "You spot the nearby metal arch, intertwined with roses, and snap a picture of yourself inbetween it.",
+            "VisitCheck": 5,
+            "Choices": [
+                {
+                    "Text": "Smell the flowers",
+                    "Prompt": "You smell the flowers, a nice little break away from scavenger hunt.",
+                    "Target": "Rose Garden"
+                },
+                {
+                    "Text": "East",
+                    "Target": "RideoutFountain"
+                },
+                {
+                    "Text": "West",
+                    "Target": "Prayerbook Cross"
+                }
+            ]
+        },
+        "RideoutFountain": {
+            "Body": "Rideout Fountain is the centerplace of many must-sees in Golden Gate Park, including the Japanese Tea Garden, the De Young Museum, and the Academy of Sciences.",
+            "PicCollect": "You're tasked with needing to visit one of the exhibits. Which one do you choose?",
+            "VisitCheck": 6,
+            "AltChoices": [
+                {
+                    "Text": "Japanese Tea Garden",
+                    "PicCollectExt": "You decide to purchase an entry ticket into the Japanese Tea Garden. You snap a photo of yourself enjoying some tea and cookies at the tea house.",
+                    "Target": "RideoutFountain"
+                },
+                {
+                    "Text": "De Young Museum",
+                    "PicCollectExt": "You decide to purchase an entry ticket into the De Young Museum. You hastily make it to the top of the building and snap a picture of you overseeing the rest of the area.",
+                    "Target": "RideoutFountain"
+                },
+                {
+                    "Text": "Academy of Sciences",
+                    "PicCollectExt": "You decide to purchase an entry ticket into the Academy of Sciences. There are so many cool exhibits, but you decide to settle at the top of the indoor forest.",
+                    "Target": "RideoutFountain"
+                }
+            ],
+            "Choices": [
+                {
+                    "Text": "East",
+                    "Target": "Koret Children's Playground"
+                },
+                {
+                    "Text": "South",
+                    "Target": "Botanical Garden"
+                },
+                {
+                    "Text": "West",
+                    "Target": "Rose Garden"
+                }
+            ]
+        },
+        "Koret Children's Playground": {
+            "Body": "A walk away from many of the other attractions, Koret Children's Playground brings back many memories in my childhood.",
+            "PicCollect": "The task is to 'have fun at the park'. You decide to snap a picture of yourself going down on the metal slide, and you feel singed because of the hot day.",
+            "VisitCheck": 7,
+            "Choices": [
+                {
+                    "Text": "North",
+                    "Target": "Conservatory of Flowers"
+                },
+                {
+                    "Text": "West",
+                    "Target": "RideoutFountain"
+                }
+            ]
+        },
+        "Lindley Meadow": {
+            "Body": "Lindley Meadow is quiet for the day, with the echoes of the Outside Lands concerts in the air.",
+            "Choices": [
+                {
+                    "Text": "East",
+                    "Target": "Prayerbook Cross"
+                },
+                {
+                    "Text": "South",
+                    "Target": "Polo Field"
+                },
+                {
+                    "Text": "West",
+                    "Target": "Bison Paddock"
+                }
+            ]
+        },
+        "Bison Paddock": {
+            "Body": "In the Bison Paddock, you watch the beautiful creatures rome peacefully in their plains.",
+            "PicCollect": "The bizon are grazing in the open field. There's a gentle one laying by the fence, so you snap a picture with you in frame, as it snoozes closeby.",
+            "VisitCheck": 11,
+            "Choices": [
+                {
+                    "Text": "East",
+                    "Target": "Lindley Meadow"
+                },
+                {
+                    "Text": "West",
+                    "Target": "DutchWindmill"
+                }
+            ]
+        },
+        "DutchWindmill": {
+            "Body": "The Dutch Windmill stands tall, taking the breeze of the nearby beach.",
+            "PicCollect": "To conclude your journey, you take a picture sitting in the windmill's window sill. You have finally completed the scavenger hunt!",
+            "VisitCheck": 12,
+            "Choices": [
+                {
+                    "Text": "Smell the flowers",
+                    "Prompt": "You smell the flowers, a nice little break away from scavenger hunt.",
+                    "Target": "DutchWindmill"
+                },
+                {
+                    "Text": "East",
+                    "Target": "Bison Paddock"
+                }
+            ]
+        },
+        "Conservatory of Flowers": {
+            "Body": "The Conservatory of Flowers' open display is a sight to see.",
+            "PicCollect": "You spot the nearby metal arch, intertwined with roses, and snap a picture of yourself inbetween it.",
+            "VisitCheck": 8,
+            "Choices": [
+                {
+                    "Text": "Smell the flowers",
+                    "Prompt": "You smell the flowers, a nice little break away from scavenger hunt.",
+                    "Target": "Conservatory of Flowers"
+                },
+                {
+                    "Text": "South",
+                    "Target": "Koret Children's Playground"
+                },
+                {
+                    "Text": "West",
+                    "Target": "RideoutFountain"
+                }
+            ]
+        }
+    }
+}
